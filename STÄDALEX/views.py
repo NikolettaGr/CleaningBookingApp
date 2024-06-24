@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def home(request):
+    """Function enables user to view the home page."""
+    return render(request, 'STÄDALEX/home.html')
