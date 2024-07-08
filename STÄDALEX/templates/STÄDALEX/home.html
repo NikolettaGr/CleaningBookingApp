@@ -1,18 +1,61 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <title>My Django App</title>
-    {% load bootstrap5 %}
-    {% bootstrap_css %}
-</head>
-
-<body>
-    <div class="container">
-        <h1>Welcome to My Django App!</h1>
-        <p>This is a sample page using Bootstrap 5 with Django.</p>
+{% block content %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-4">Welcome to My Bootstrap Website</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
     </div>
-    {% bootstrap_javascript %}
-</body>
 
-</html>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 3</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="mt-5">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
